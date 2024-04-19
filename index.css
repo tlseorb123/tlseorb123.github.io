@@ -1,0 +1,14 @@
+main {
+  background-color: yellow;
+}
+#header{
+    background-color: aqua;
+    height: 100vh;
+}
+aside {
+    background-color: rgb(172, 172, 212);
+    height: 100vh;
+}
+footer{
+    background-color: antiquewhite;
+}
