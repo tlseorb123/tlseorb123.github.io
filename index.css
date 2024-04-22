@@ -1,14 +1,17 @@
+header {
+  height: 15vh
+}
 main {
   background-color: yellow;
 }
-#header{
-    background-color: aqua;
-    height: 100vh;
+#header {
+  background-color: aqua;
+  height: 100vh;
 }
 aside {
-    background-color: rgb(172, 172, 212);
-    height: 100vh;
+  background-color: rgb(172, 172, 212);
+  height: 100vh;
 }
-footer{
-    background-color: antiquewhite;
+footer {
+  background-color: antiquewhite;
 }
