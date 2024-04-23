@@ -1,13 +1,26 @@
 header {
-  height: 15vh
+  height: 15vh;
+  text-align: center;
 }
 main {
   background-color: yellow;
+  text-align: center;
 }
-#header {
+header h1 {
+  padding-top: 4%;
+}
+#main-header {
   background-color: aqua;
-  height: 100vh;
+  height: 100%;
 }
+#header-h1 {
+  position: absolute;
+  top: 1000px;
+  right: 50%;
+}
+
+/* 해더!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+
 aside {
   background-color: rgb(172, 172, 212);
   height: 100vh;
