@@ -54,13 +54,14 @@ header h1 {
   }
 }
 #main-btn {
+  display: inline-block;
   margin-bottom: 10%;
   animation-name: header-btn;
   animation-duration: 8s;
   background-color: white;
   border: 0;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s;
   color: rgb(173, 173, 164);
 }
 @keyframes header-btn {
@@ -73,6 +74,7 @@ header h1 {
 }
 #main-btn:hover {
   transform: translateY(5px);
+  background-color: rgb(204, 199, 194);
 }
 /* 해더!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 
@@ -81,6 +83,8 @@ aside {
   height: 100vh;
   width: 100%;
   color: white;
+  animation-name: aside;
+  animation-duration: 1s;
 }
 .left {
   background-color: rgb(158, 158, 211);
@@ -114,6 +118,14 @@ aside h1 {
 #gost-wht {
   color: rgb(206, 201, 195);
 }
+@keyframes aside {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 1250px) {
   .left {
     width: 100%;
@@ -138,21 +150,62 @@ section h1 {
 #section-big {
   font-size: 60px;
 }
-#section-middle{
-  display: flex;
-  height: 50vh;
+#section-middle {
+  height: 90vh;
+  position: relative;
 }
-#middle-left{
+#middle-left {
   width: 60%;
   height: 50%;
 }
-#middle-right{
- width: 40%;
- height: 50%;
+#middle-right {
+  width: 30%;
+  height: 100%;
+  text-align: start;
+  line-height: 2;
+  position: absolute;
+  right: 10%;
+  bottom: 8%;
 }
-
-
-
-footer {
-  background-color: antiquewhite;
+section div {
+  padding: 2%;
+}
+#section-num {
+  color: rgb(113, 113, 197);
+  font-size: 80px;
+}
+section a {
+  color: rgb(113, 113, 197);
+}
+section button {
+  background-color: rgb(113, 113, 197);
+  font-size: 15px;
+  padding: 2% 6% 2% 6%;
+  border-radius: 20px;
+}
+#section-btn {
+  text-align: center;
+}
+#section-tab {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-left: 10%;
+  line-height: 2;
+}
+#a-line {
+  border: 1px solid;
+  border-width: 0 0 1px;
+  border-color: rgb(113, 113, 197);
+}
+td div {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  font-size: 13px;
+  background-color: brown;
+  text-align: center;
+  line-height: 21px;
 }
